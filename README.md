@@ -1,39 +1,57 @@
-# composables
+# Vue 3 Composables Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+Демонстрационное приложение, показывающее работу с пользовательскими композаблами (composables) в Vue 3. Проект включает в себя примеры валидации форм и работы с HTTP-запросами.
 
-## Recommended IDE Setup
+## Основные функции
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### 1. Валидация форм (useFormValidation)
 
-## Type Support for `.vue` Imports in TS
+- Валидация полей формы по различным правилам
+- Поддержка множественных правил валидации
+- Гибкая система сообщений об ошибках
+- Демонстрация на примере формы регистрации
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### 2. HTTP-клиент (useHttp)
 
-## Customize configuration
+- Обертка над Fetch API
+- Поддержка всех основных HTTP-методов (GET, POST, PUT, DELETE)
+- Типизация запросов и ответов
+- Обработка ошибок
+- Демонстрация CRUD-операций на примере работы с постами
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Технологии
 
-## Project Setup
+- Vue 3
+- TypeScript
+- Vite
+- Vue Router
+- SCSS
+- ESLint
 
-```sh
+## Установка и запуск
+
+1. Клонируйте репозиторий:
+
+```bash
+git clone [URL репозитория]
+```
+
+2. Установите зависимости:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. Запустите проект:
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Использование
 
-```sh
-npm run build
-```
+### Страницы приложения:
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- "/" Главная страница
+- "/form" Демонстрация валидации форм
+- "/posts" - Демонстрация работы с HTTP-запросами
